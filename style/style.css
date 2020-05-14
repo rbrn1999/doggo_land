@@ -1,5 +1,7 @@
 body{
-    margin: 0;
+    margin: auto;
+    align-self: center;
+    max-width: 1920px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 nav{
@@ -25,7 +27,122 @@ nav .box{
     width: 50%;
 }
 
-.logo{
+.nav_item {
+    margin: 15px; 
+}
+
+.logo{  
     height: 25;
     width: fit-content;
 }
+
+.visual{
+    display: flex;
+    height: 435px;
+    width: auto;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/visual.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.visual-box .shade-layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    width: auto;
+    height: auto;
+}
+
+.visual h1{
+    align-self: flex-end;
+    margin-bottom: 60px;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+.catagory-box{
+    width: 100%;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 46px 23px 46px 23px;
+}
+.catagory-row-1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-inline-start: -24px;
+    margin-inline-end: -24px;
+    justify-content: space-around;
+}
+.catagory-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px;
+    margin-inline-start: -24px;
+    justify-content: space-around;
+}
+
+.catagory-row-1 .catagory-item-box {
+    margin: 0 24px;
+}
+.catagory-row-2 .catagory-item-box {
+    margin: 0 24px;
+}
+.catagory-item-box h3{
+    font-size: 24px;
+    margin: 0.5em 0 0.5em;
+}
+.catagory-item-box p{
+    font-size: 16px;
+    color: #707070;
+}
+
+.catagory-row-2 .catagory-item-box {
+    margin: 0 24px;
+}
+
+footer .info-box{
+    display: flex;
+    width: 100%;
+    height: 84px;
+    align-items: center;
+    background-color: #F5F5F5;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+footer .info-box .info{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between ;
+    margin: 0 47px;
+    height: auto;
+    width: 50%;
+}
+footer .info-box .info .item{
+    margin: 0 20px;
+}
+
+footer .copy-right-box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #EBEAEB;
+}
+
+footer .copy-right-box .copy-right{
+    margin-left: 67px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
