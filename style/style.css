@@ -1,13 +1,32 @@
 body{
     margin: auto;
     align-self: center;
-    max-width: 1920px;
+    max-width: 1920;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+
+
+@media screen and (min-width: 415px){
+    .hamburger {
+        display: none;
+    }
+}
+.hamburger {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    height: 40px;
+}
+.hamburger img{
+    height: 100%;
+    width: auto;
+}
+
 nav{
     display: flex;
     height: 70px;
-    width: auto;
+    width: 100%;
     align-items: center;
     margin: 0;
     background-color: white;
@@ -15,22 +34,51 @@ nav{
     border-color: #707070;
     align-items: center;
 }
-
+@media screen and (max-width: 414px){
+    nav .box{
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 415px){
+    nav .box{
+        margin: 67px;
+    }
+}
 nav .box{
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
-    justify-content: space-between ;
-    margin: 67px;
+    justify-content: space-between ;    
     height: auto;
-    width: 50%;
+    width: 35%;
 }
 
-.nav_item {
-    margin: 15px; 
+@media screen and (max-width: 414px){
+    img {
+        max-width: 100%;
+    }
 }
 
+@media screen and (max-width: 500px){
+    .nav_item {
+        margin: 5px; 
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 500px){
+    .nav_item {
+        margin: 5px; 
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .logo {
+        display: none;
+    }
+}
 .logo{  
     height: 25;
     width: fit-content;
@@ -38,8 +86,8 @@ nav .box{
 
 .visual{
     display: flex;
-    height: 435px;
-    width: auto;
+    width: 100%;
+    height: 450px;
     justify-content: center;
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/visual.jpg");
     background-size: cover;
@@ -71,31 +119,40 @@ nav .box{
     max-width: 1280px;
     margin: 46px 23px 46px 23px;
 }
+@media screen and (min-width: 768px){
+    .catagory-row-1 {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .catagory-row-1 {
+        justify-content: space-around;
+    }
+}
 .catagory-row-1{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-inline-start: -24px;
-    margin-inline-end: -24px;
-    justify-content: space-around;
+    width: auto;
+    margin-inline-start: -10px;
+    margin-inline-end: -10px;
 }
 .catagory-row-2{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
     margin: 50px;
-    margin-inline-start: -24px;
-    justify-content: space-around;
+    margin-inline-start: -20px;
+    justify-content: center;
 }
 
 .catagory-row-1 .catagory-item-box {
-    margin: 0 24px;
+    margin: 0 10px;
 }
 .catagory-row-2 .catagory-item-box {
-    margin: 0 24px;
+    margin: 0 20px;
 }
 .catagory-item-box h3{
-    font-size: 24px;
+    font-size: 20px;
     margin: 0.5em 0 0.5em;
 }
 .catagory-item-box p{
@@ -119,19 +176,36 @@ footer .info-box{
     border-bottom: 1px solid #707070;
 }
 
+@media screen and (max-width: 414px) {
+    footer .info-box .info{
+        margin: 0 5px;
+    }
+}
+@media screen and (min-width: 768px){
+    footer .info-box .info{
+        margin: 0 57px;
+    }
+}
 footer .info-box .info{
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
     justify-content: space-between ;
-    margin: 0 47px;
     height: auto;
-    width: 50%;
+    width: 45%;
 }
-footer .info-box .info .item{
-    margin: 0 20px;
+@media screen and (max-width: 414px) {
+    footer .info-box .info .item{
+        margin: 0 8px;
+    }
 }
+@media screen and (min-width: 414px) {
+    footer .info-box .info .item{
+        margin: 0 30px;
+    }
+}
+
 
 footer .copy-right-box{
     display: flex;
@@ -140,9 +214,22 @@ footer .copy-right-box{
     background-color: #EBEAEB;
 }
 
-footer .copy-right-box .copy-right{
-    margin-left: 67px;
-    font-size: 18px;
-    font-weight: bold;
+@media screen and (max-width: 414px) {
+    footer .copy-right-box .copy-right{
+        margin: 0 5px;
+    }
+    
 }
+@media screen and (min-width: 415px) {
+    footer .copy-right-box .copy-right{
+        margin: 0 67px;
+        
+    }
+}
+footer .copy-right-box .copy-right{
+    font-size: 18px;
+     font-weight: bold;   
+}
+
+
 
